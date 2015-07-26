@@ -1,0 +1,80 @@
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize_map() {
+        var mapOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(45.956879, 12.666249),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'),
+                mapOptions);
+
+        var Parco = new google.maps.Marker({
+            position: new google.maps.LatLng(45.956879, 12.666249),
+            map: map,
+            icon: 'img/marker_enlabs.png',
+            title:"PArCo - Galleria d'Arte Moderna e Contemporanea"
+        });
+    }
+</script>
+
+<a name="location"></a>
+<section class="alpha_32">
+    <div class="container group">
+
+        <h3 class="column_12">Location</h3>
+        <div class="column_6 map">
+            <div id="map_canvas"></div>
+        </div>
+
+        <div class="column_6 legend right">
+            <dl>
+                <dt class="event_location"><span><strong>Event location</strong></span></dt>
+                <dd  class="event_location">
+                    <strong>c/o PArCo - Galleria d'Arte Moderna e Contemporanea</strong>
+                    Viale Dante Alighieri 33<br />
+                    33170 Pordenone, Italy
+                </dd>
+
+                <dt class="get_to"><span><strong>Coordinate</strong></span></dt>
+                <dd>Coordinate: Lat. 45.956879, Long. 12.666249</dd>
+
+            </dl>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="column_3">
+        <h5>In auto</h5>
+        <p>
+            Autortrada A28 Portogruaro/Conegliano, uscita Pordenone (fiera).
+            Usciti dall'autostrada svoltare a destra e seguire le indicazioni per il centro.
+            Raggiungere via Riviera del Pordenone (che costeggia il fiume Noncello) e seguire le indicazioni dei pannelli a messaggio variabile per raggiungere i principali parcheggi.
+            I parcheggi più vicini a PArCo sono: TRIBUNALE/RIVIERASCA e CORTE DEL BOSCO.
+        </p>
+
+        </div>
+
+        <div class="column_3">
+            <h5>In treno</h5>
+            <p>
+                Linea Venezia/Udine con fermata a Pordenone. Servizio taxi fuori dalla stazione.
+            </p>
+        </div>
+
+        <div class="column_3">
+            <h5>A piedi, dalla stazione</h5>
+            <p>
+                Percorrere Via Mazzini sino a Piazzetta Cavour, girare a destra in Piazza XX Settembre e proseguire in Viale Martelli. Dopo circa 200 metri svoltare a sinistra in Viale Dante. Di fronte a voi trovate l'ingresso a Parco Galvani, all'interno del quale si trova PArCo.
+            </p>
+       </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="separator"></div>
+</section>
